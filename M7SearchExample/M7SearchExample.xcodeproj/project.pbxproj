@@ -498,7 +498,7 @@
 				INFOPLIST_FILE = M7SearchExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.M7SearchExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m7.M7SearchExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,7 +512,7 @@
 				INFOPLIST_FILE = M7SearchExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.M7SearchExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m7.M7SearchExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
