@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  M7SearchExample
+
+  Created by Sam Spencer on 1/19/17.
+  Copyright © 2017 CoderKo1o. All rights reserved.
+*/
+
+"M7ExampleSearchPlaceholderText" = "Rechercher un langage de programmation";
+"M7ExampleTableSectionZeroTitle" = "Choisissez le style de Historique de la Recherche";
+"M7ExampleTableSectionOneTitle" = "Choisissez le style de Recherches Populaires";

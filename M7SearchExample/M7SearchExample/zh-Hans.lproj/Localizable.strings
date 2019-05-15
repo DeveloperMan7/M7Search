@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  M7SearchExample
+
+  Created by Sam Spencer on 1/19/17.
+  Copyright © 2017 CoderKo1o. All rights reserved.
+*/
+
+"M7ExampleSearchPlaceholderText" = "搜索编程语言";
+"M7ExampleTableSectionZeroTitle" = "选择搜索历史风格（热门搜索为默认风格)";
+"M7ExampleTableSectionOneTitle" = "";
