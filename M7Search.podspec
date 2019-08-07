@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary      = 'An elegant search controller which replaces the UISearchController for iOS.'
     s.homepage     = 'https://github.com/DeveloperMan7/M7Search'
     s.license      = 'MIT'
-    s.authors      = {'CoderKo1o' => '361208971@qq.com'}
+    s.authors      = {'Man7' => '361208971@qq.com'}
     s.platform     = :ios, '7.0'
     s.source       = {:git => 'https://github.com/DeveloperMan7/M7Search.git', :tag => s.version}
     s.source_files = 'M7Search/**/*.{h,m}'
