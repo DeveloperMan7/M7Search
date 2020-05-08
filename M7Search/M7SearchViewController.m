@@ -154,7 +154,7 @@
         [titleLabel sizeToFit];
         
         backButton.py_height = navigationBar.py_height;
-        backButton.py_width = titleLabel.py_width + imageView.py_width / 2.0 + backButtonLayoutMargins.left + backButtonLayoutMargins.right;
+        backButton.py_width = titleLabel.py_width + imageView.py_width + backButtonLayoutMargins.left + backButtonLayoutMargins.right;
         adaptWidth = backButton.py_width + 8;
     } else { // Default is M7SearchViewControllerShowModeModal
         [cancelButton sizeToFit];
@@ -469,12 +469,17 @@
     searchBar.placeholder = [NSBundle py_localizedStringForKey:M7SearchSearchPlaceholderText];
     searchBar.backgroundImage = [NSBundle py_imageNamed:@"clearImage"];
     searchBar.delegate = self;
-    for (UIView *subView in [[searchBar.subviews lastObject] subviews]) {
-        if ([[subView class] isSubclassOfClass:[UITextField class]]) {
-            UITextField *textField = (UITextField *)subView;
-            textField.font = [UIFont systemFontOfSize:16];
-            _searchTextField = textField;
-            break;
+    if (@available(iOS 13.0, *)) {
+        _searchTextField = searchBar.searchTextField;
+
+    }else{
+        for (UIView *subView in [[searchBar.subviews lastObject] subviews]) {
+            if ([[subView class] isSubclassOfClass:[UITextField class]]) {
+                UITextField *textField = (UITextField *)subView;
+                textField.font = [UIFont systemFontOfSize:16];
+                _searchTextField = textField;
+                break;
+            }
         }
     }
     self.searchBar = searchBar;

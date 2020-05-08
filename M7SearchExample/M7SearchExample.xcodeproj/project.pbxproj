@@ -23,6 +23,8 @@
 		6B97179E1DC48FE800B2DAA1 /* M7SearchExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97179D1DC48FE800B2DAA1 /* M7SearchExampleController.m */; };
 		6B9DA6011DC8415700D07A16 /* M7TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DA6001DC8415700D07A16 /* M7TempViewController.m */; };
 		A6324EC11E3130FB00BAA226 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6324EC31E3130FB00BAA226 /* Localizable.strings */; };
+		CC68229F2464FB74008790A6 /* UIViewController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68229B2464FB73008790A6 /* UIViewController+Search.m */; };
+		CC6822A02464FB74008790A6 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68229C2464FB73008790A6 /* SearchResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		A6324EC51E3130FE00BAA226 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A6324EC61E3130FF00BAA226 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A6324EC71E31310000BAA226 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC68229B2464FB73008790A6 /* UIViewController+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Search.m"; sourceTree = "<group>"; };
+		CC68229C2464FB73008790A6 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
+		CC68229D2464FB73008790A6 /* UIViewController+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Search.h"; sourceTree = "<group>"; };
+		CC68229E2464FB73008790A6 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		6B3EB2121DC498410080DF86 /* M7Search */ = {
 			isa = PBXGroup;
 			children = (
+				CC68229A2464FB73008790A6 /* SearchCategory */,
 				6B3EB2131DC498410080DF86 /* M7Search.bundle */,
 				6B3EB2141DC498410080DF86 /* M7Search.h */,
 				6B3EB2151DC498410080DF86 /* M7SearchConst.h */,
@@ -195,6 +202,17 @@
 				6B9717901DC48FA800B2DAA1 /* Info.plist */,
 			);
 			path = M7SearchExampleUITests;
+			sourceTree = "<group>";
+		};
+		CC68229A2464FB73008790A6 /* SearchCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CC68229B2464FB73008790A6 /* UIViewController+Search.m */,
+				CC68229C2464FB73008790A6 /* SearchResultViewController.m */,
+				CC68229D2464FB73008790A6 /* UIViewController+Search.h */,
+				CC68229E2464FB73008790A6 /* SearchResultViewController.h */,
+			);
+			path = SearchCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +359,11 @@
 				6B3EB2221DC498410080DF86 /* M7SearchViewController.m in Sources */,
 				6B9DA6011DC8415700D07A16 /* M7TempViewController.m in Sources */,
 				6B9717681DC48FA800B2DAA1 /* main.m in Sources */,
+				CC68229F2464FB74008790A6 /* UIViewController+Search.m in Sources */,
 				6B3EB2231DC498410080DF86 /* UIColor+M7SearchExtension.m in Sources */,
 				6B8FA3851E1B781F00DFD42A /* NSBundle+M7SearchExtension.m in Sources */,
 				6B3EB2111DC498370080DF86 /* AppDelegate.m in Sources */,
+				CC6822A02464FB74008790A6 /* SearchResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
