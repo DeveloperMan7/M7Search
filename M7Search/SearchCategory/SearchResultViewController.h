@@ -6,11 +6,11 @@
 //  Copyright © 2020 AppCoda. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "HXBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SearchResultViewController : BaseViewController
+@interface SearchResultViewController : HXBaseViewController
 @property (nonatomic, copy) NSString *keyWord;
 @end
 

@@ -22,7 +22,15 @@
 {
     M7SearchSuggestionViewController *searchSuggestionVC = [[self alloc] init];
     searchSuggestionVC.didSelectCellBlock = didSelectCellBlock;
-    searchSuggestionVC.automaticallyAdjustsScrollViewInsets = NO;
+    UIScrollView *scrollView = nil;
+    for (UIView *view in searchSuggestionVC.view.subviews) {
+        if ([view isKindOfClass:[UITableView class]] || [view isKindOfClass:[UICollectionView class]]) {
+            scrollView = (UIScrollView *)view;
+            scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            continue;;
+        }
+    }
+//    searchSuggestionVC.automaticallyAdjustsScrollViewInsets = NO;
     return searchSuggestionVC;
 }
 
